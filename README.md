@@ -12,10 +12,11 @@ This is a simple Angular 2 website using the brand new router. It demonstrates h
 git clone https://github.com/onehungrymind/fem-ng2-simple-app.git
 cd fem-ng2-simple-app
 npm i
+typings install
 npm start
 ```
 
-Then navigate your browser to http://localhost:8080 and use the app.
+Then navigate your browser to http://localhost:8080/home and use the app.
 
 ## Testing
 The test setup includes `webpack.test.config.js`, `spec-bundle.js`, and `karma.conf.js`. To run unit tests, execute `npm test` in your terminal.

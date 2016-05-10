@@ -11,7 +11,7 @@ module.exports = {
   debug: true,
   entry: './app/boot.ts',
   resolve: {
-    extensions: ['', '.ts', '.js']
+    extensions: ['', '.ts', '.js', '.html']
   },
   output: {
     path: './build',
@@ -22,7 +22,8 @@ module.exports = {
       { test: /\.js$/, loader: 'source-map-loader', exclude: [ root('node_modules/rxjs') ] }
     ],
     loaders: [
-      { test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [ /\.(spec|e2e)\.ts$/ ] }
+      { test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [ /\.(spec|e2e)\.ts$/ ] },
+      { test: /\.(html|css)$/, loader: 'raw-loader' }
     ]
   },
   devServer: {
