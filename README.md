@@ -4,6 +4,7 @@ This is a simple Angular 2 website using the brand new router. It demonstrates h
 ## Dependencies
 - You must have `node v >= 4.0` and `npm` installed (via `brew install node` or [NodeJS.org](https://nodejs.org/en/));
 - `npm i -g typings webpack-dev-server webpack rimraf`
+- If you have previously installed `typings`, be sure you are on `version 1.x` as this repo requires it
 
 ## Getting Started
 
