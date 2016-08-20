@@ -10,14 +10,6 @@ import {ExperimentsService} from './common/experiments.service';
   selector: 'app',
   template: require('./app.component.html'),
   styles: [require('./app.component.css')],
-  directives: [ ROUTER_DIRECTIVES ],
-  providers: [StateService, ExperimentsService],
+  providers: [StateService, ExperimentsService]
 })
-@Routes([
-  {path: '/',            component: HomeComponent },
-  {path: '/home',        component: HomeComponent },
-  {path: '/about',       component: AboutComponent },
-  {path: '/experiments', component: ExperimentsComponent },
-  {path: '/*',           component: HomeComponent }
-])
 export class AppComponent {}
