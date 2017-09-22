@@ -9,8 +9,13 @@
 <hr/>
 <div>
   <h2 class="text-error">Experiments: {{message}}</h2>
+  <h3>{{newNumber}}</h3>
   <form class="form-inline">
     <input type="text" [(ngModel)]="message" placeholder="Message" name="message">
     <button type="submit" class="btn" (click)="updateMessage(message)">Update Message</button>
+  </form>
+  <form class="form-inline">
+    <input type="text" [(ngModel)]="newNumber" placeholder="Number" name="number">
+    <button type="submit" class="btn" (click)="updateNumber(newNumber)">Update Number</button>
   </form>
 </div>

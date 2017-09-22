@@ -14,6 +14,7 @@ export class ExperimentsComponent implements OnInit {
   title: string = 'Experiments Page';
   body: string = 'This is the about experiments body';
   message: string;
+  newNumber: number;
   experiments: Experiment[];
 
   constructor(
@@ -23,9 +24,14 @@ export class ExperimentsComponent implements OnInit {
   ngOnInit() {
     this.experiments = this._experimentsService.getExperiments();
     this.message = this._stateService.getMessage();
+    this.newNumber = this._stateService.getNumber();
   }
 
   updateMessage(m: string): void {
     this._stateService.setMessage(m);
+  }
+
+  updateNumber(n: number): void {
+    this._stateService.setNumber(n);
   }
 }
